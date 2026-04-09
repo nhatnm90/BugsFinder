@@ -1,0 +1,43 @@
+## Thư mục build
+[Bb]in/
+[Oo]bj/
+
+## Cấu hình cá nhân của Visual Studio
+.vs/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+## Cấu hình cá nhân của Rider (nếu bạn dùng JetBrains Rider)
+.idea/
+*.sln.iml
+
+## Thư mục NuGet Packages (sẽ tự động restore khi build)
+packages/
+*.nupkg
+
+## Các file tạm, cache và log
+*.log
+*.cache
+*.bak
+*.tmp
+*.temp
+[Tt]humbs.db
+[Dd]esktop.ini
+$RECYCLE.BIN/
+
+## Các file sinh ra khi debug/profiling
+*.psess
+*.vsp
+*.vspx
+*.sap
+
+## Thư mục Test (nếu có viết Unit Test)
+[Tt]est[Rr]esult*/
+[Bb]uild[Ll]og.*
+
+## Bỏ qua các file cấu hình ReSharper
+*_ReSharper*/
+*.[Rr]e[Ss]harper
+*.DotSettings.user

@@ -1,0 +1,65 @@
+<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <!--
+        VS Code Dark+ — default dark theme for the MineSweeper app.
+        All keys referenced via {DynamicResource} in MainWindow.xaml.
+    -->
+
+    <!-- ── Layout / container colours ──────────────────────────────────────── -->
+    <SolidColorBrush x:Key="AppBg"          Color="#1E1E1E"/>
+    <SolidColorBrush x:Key="CardBg"         Color="#252526"/>
+
+    <!-- ── Cell colours ─────────────────────────────────────────────────────── -->
+    <SolidColorBrush x:Key="CellBg"         Color="#3C3C3C"/>
+    <SolidColorBrush x:Key="CellRevealedBg" Color="#1E1E1E"/>
+    <SolidColorBrush x:Key="CellBorder"     Color="#555555"/>
+    <SolidColorBrush x:Key="CellHoverBg"    Color="#4A4A4A"/>
+    <SolidColorBrush x:Key="CellPressedBg"  Color="#2A2A2A"/>
+    <SolidColorBrush x:Key="MineBg"         Color="#6B1212"/>
+    <SolidColorBrush x:Key="MineBorder"     Color="#F44747"/>
+
+    <!-- ── LCD digits (mine counter / timer) ────────────────────────────────── -->
+    <SolidColorBrush x:Key="LcdFg"          Color="#569CD6"/>
+
+    <!-- ── Reset / emoji button ──────────────────────────────────────────────── -->
+    <SolidColorBrush x:Key="ResetBg"        Color="#3C3C3C"/>
+    <SolidColorBrush x:Key="ResetBorder"    Color="#6A6A6A"/>
+    <SolidColorBrush x:Key="WinBg"          Color="#1B6B3A"/>
+    <SolidColorBrush x:Key="WinBorder"      Color="#4EC9B0"/>
+    <SolidColorBrush x:Key="LossBg"         Color="#6B1212"/>
+    <SolidColorBrush x:Key="LossBorder"     Color="#F44747"/>
+
+    <!-- ── Difficulty / theme chips ─────────────────────────────────────────── -->
+    <SolidColorBrush x:Key="ChipBorder"         Color="#454545"/>
+    <SolidColorBrush x:Key="ChipFg"             Color="#858585"/>
+    <SolidColorBrush x:Key="ChipHoverBg"        Color="#2D2D2D"/>
+    <SolidColorBrush x:Key="ChipHoverFg"        Color="#D4D4D4"/>
+    <SolidColorBrush x:Key="ChipSelectedBg"     Color="#007ACC"/>
+    <SolidColorBrush x:Key="ChipSelectedFg"     Color="#FFFFFF"/>
+    <SolidColorBrush x:Key="SpecialChipSelectedBg" Color="#B8860B"/>
+
+    <!-- ── Typography ────────────────────────────────────────────────────────── -->
+    <SolidColorBrush x:Key="TitleFg"        Color="#858585"/>
+    <SolidColorBrush x:Key="TextPrimary"    Color="#D4D4D4"/>
+    <SolidColorBrush x:Key="TextSecondary"  Color="#BBBBBB"/>
+    <SolidColorBrush x:Key="TextMuted"      Color="#6A6A6A"/>
+
+    <!-- ── Tutorial overlay ──────────────────────────────────────────────────── -->
+    <SolidColorBrush x:Key="CurtainColor"       Color="#D91E1E1E"/>
+    <SolidColorBrush x:Key="TutPrimaryBg"       Color="#007ACC"/>
+    <SolidColorBrush x:Key="TutPrimaryFg"       Color="#FFFFFF"/>
+    <SolidColorBrush x:Key="TutSecondaryBg"     Color="#3C3C3C"/>
+    <SolidColorBrush x:Key="TutSecondaryFg"     Color="#D4D4D4"/>
+    <SolidColorBrush x:Key="TutSkipFg"          Color="#858585"/>
+    <SolidColorBrush x:Key="TutSkipHoverBg"     Color="#2D2D2D"/>
+
+    <!-- ── Number colours (1–8) — VS Code token palette ─────────────────────── -->
+    <SolidColorBrush x:Key="Num1" Color="#569CD6"/>  <!-- blue keyword     -->
+    <SolidColorBrush x:Key="Num2" Color="#4EC9B0"/>  <!-- teal type        -->
+    <SolidColorBrush x:Key="Num3" Color="#F44747"/>  <!-- red error        -->
+    <SolidColorBrush x:Key="Num4" Color="#DCDCAA"/>  <!-- yellow function  -->
+    <SolidColorBrush x:Key="Num5" Color="#CE9178"/>  <!-- orange string    -->
+    <SolidColorBrush x:Key="Num6" Color="#9CDCFE"/>  <!-- light-blue var   -->
+    <SolidColorBrush x:Key="Num7" Color="#D4D4D4"/>  <!-- default text     -->
+    <SolidColorBrush x:Key="Num8" Color="#808080"/>  <!-- gray comment     -->
+</ResourceDictionary>
