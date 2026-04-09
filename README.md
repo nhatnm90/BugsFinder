@@ -1,4 +1,4 @@
-# 🐞 Bug Finder - The Ultimate QA Simulator
+# 🐞 Bugs Finder - Rise of The Ultimate Tester 🦹🏿
 
 ![.NET](https://img.shields.io/badge/.NET-8.0-512BD4?style=for-the-badge&logo=dotnet)
 ![WPF](https://img.shields.io/badge/WPF-Windows_Presentation_Foundation-blue?style=for-the-badge)
@@ -23,6 +23,9 @@ In today's rapidly evolving tech landscape, I believe the ability to efficiently
 BugsFinderis a 30-year-old classic, but it lacks the thrill of modern gaming. **Bug Finder** reimagines this classic through the lens of a Software Developer/QA Tester. Instead of sweeping mines, you are hunting down critical bugs before releasing on Production. 
 
 I didn't just rebuild a game; I built a **market-ready product** that introduces action-puzzle mechanics (Extreme Mode), a progression system (Stars & Unlocks), and an educational twist (Quiz Bugs). This is designed not just to be played, but to be highly addictive.
+
+### 💡 A Note on the Project Name: Why "Bugs Finder"?
+While the original assessment requested a classic *MineSweeper* game, I wanted to deliver a product that resonates with our daily lives in the tech industry. *Bugs Finder* retains the exact core mathematical mechanics and rules of MineSweeper, but shifts the narrative perspective: you are no longer a soldier sweeping mines; you are a Tester on a quest to pinpoint hidden bugs and make sure all of them was fixed before deploying to Production. It is a creative reimagining designed to make the experience more relatable, engaging, and fun for developers.
 
 ---
 
@@ -49,7 +52,7 @@ Finding a bug is good, but understanding it is better.
 * **Economy System:** Collect hidden Stars (⭐) across the board or by answering Quiz Bugs.
 * **Unlockable Content:** Use Stars to unlock the massive **Hard Mode** or exclusive **Special Maps** (Country-shaped grids).
 * **Persistent Leaderboard:** Top 10 fastest times are recorded per difficulty, driving replayability.
-* **World Record Bounty:** Beat the real-life BugsFinderworld records embedded in the game to trigger a special animated gift box (Win a simulated 1-year Claude Pro sub!).
+* **World Record Bounty:** Beat the real-life BugsFinderworld records embedded in the game to trigger a special animated gift box (ex: Win a simulated 1-year Claude Pro sub!).
 
 ---
 
