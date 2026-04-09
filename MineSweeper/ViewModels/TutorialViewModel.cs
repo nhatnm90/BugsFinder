@@ -113,6 +113,16 @@ public sealed class TutorialViewModel : ViewModelBase
             TutorialTarget.ResetButton),
 
         new(
+            "Leaderboard 🏆",
+            "The 🏆 button in the top-right control strip opens the Leaderboard browser.\n\n" +
+            "• Each difficulty mode has its own leaderboard tab.\n" +
+            "• Entries show player name and completion time, sorted fastest first.\n" +
+            "• Up to 10 top times are saved per mode, persisted across sessions.\n\n" +
+            "After winning a game you will be prompted to enter your name — " +
+            "your result is highlighted in the leaderboard so you can see exactly where you placed.",
+            TutorialTarget.LeaderboardButton),
+
+        new(
             "Extreme Mode ⚡",
             "The ⚡ Extreme button in the top-right corner adds a time-pressure challenge.\n\n" +
             "• Extreme OFF — the timer just counts up. No pressure, play at your own pace.\n\n" +
@@ -122,16 +132,6 @@ public sealed class TutorialViewModel : ViewModelBase
             "Toggle Extreme at any time — even mid-game.\n\n" +
             "With-in everytime that you flag a correct bug tile, 1 start will be added as a present in this mode",
             TutorialTarget.ExtremeButton),
-
-        new(
-            "Leaderboard 🏆",
-            "The 🏆 button in the top-right control strip opens the Leaderboard browser.\n\n" +
-            "• Each difficulty mode has its own leaderboard tab.\n" +
-            "• Entries show player name and completion time, sorted fastest first.\n" +
-            "• Up to 10 top times are saved per mode, persisted across sessions.\n\n" +
-            "After winning a game you will be prompted to enter your name — " +
-            "your result is highlighted in the leaderboard so you can see exactly where you placed.",
-            TutorialTarget.LeaderboardButton),
 
         new(
             "Difficulty Levels 🏆",
