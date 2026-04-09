@@ -20,7 +20,7 @@ While the required AI conversation logs are attached in the `docs/ai-assistance/
 In today's rapidly evolving tech landscape, I believe the ability to efficiently orchestrate AI tools to deliver tangible business value is a paramount skill. I present this project as a testament to that mindset, and I kindly ask for an objective evaluation based on the product's quality, user experience, and architectural soundness.
 
 ## 📌 Product Vision (The "You Build, I Buy" Philosophy)
-Minesweeper is a 30-year-old classic, but it lacks the thrill of modern gaming. **Bug Finder** reimagines this classic through the lens of a Software Developer/QA Tester. Instead of sweeping mines, you are hunting down critical bugs before releasing on Production. 
+BugsFinderis a 30-year-old classic, but it lacks the thrill of modern gaming. **Bug Finder** reimagines this classic through the lens of a Software Developer/QA Tester. Instead of sweeping mines, you are hunting down critical bugs before releasing on Production. 
 
 I didn't just rebuild a game; I built a **market-ready product** that introduces action-puzzle mechanics (Extreme Mode), a progression system (Stars & Unlocks), and an educational twist (Quiz Bugs). This is designed not just to be played, but to be highly addictive.
 
@@ -49,7 +49,7 @@ Finding a bug is good, but understanding it is better.
 * **Economy System:** Collect hidden Stars (⭐) across the board or by answering Quiz Bugs.
 * **Unlockable Content:** Use Stars to unlock the massive **Hard Mode** or exclusive **Special Maps** (Country-shaped grids).
 * **Persistent Leaderboard:** Top 10 fastest times are recorded per difficulty, driving replayability.
-* **World Record Bounty:** Beat the real-life Minesweeper world records embedded in the game to trigger a special animated gift box (Win a simulated 1-year Claude Pro sub!).
+* **World Record Bounty:** Beat the real-life BugsFinderworld records embedded in the game to trigger a special animated gift box (Win a simulated 1-year Claude Pro sub!).
 
 ---
 
@@ -82,8 +82,8 @@ Dependencies are cleanly separated into dedicated services:
 
 ### Quick Start
 1. Clone the repository.
-2. Open `MineSweeper.sln` in Visual Studio 2022.
-3. Set `MineSweeper` as the Startup Project.
+2. Open `BugsFinder.sln` in Visual Studio 2022.
+3. Set `BugsFinder` as the Startup Project.
 4. Press `F5` or click **Start** to build and run the application.
 * **Directory:** You can review the complete ideation and troubleshooting process in the `docs/ai-assistance/` folder.
 * **Core Logic:** The core algorithms (`GameEngine.cs` logic, recursive revealing, MVVM wiring) were carefully reviewed, refactored, and tested by me to ensure structural integrity and absence of memory leaks.
