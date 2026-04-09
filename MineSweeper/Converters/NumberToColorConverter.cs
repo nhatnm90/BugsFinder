@@ -4,7 +4,7 @@ using System.Windows;
 using System.Windows.Data;
 using System.Windows.Media;
 
-namespace MineSweeper.Converters;
+namespace BugsFinder.Converters;
 
 /// <summary>
 /// Converts an adjacent mine count (1–8) to a <see cref="SolidColorBrush"/> by

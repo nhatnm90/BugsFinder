@@ -1,6 +1,6 @@
-namespace MineSweeper.Models;
+namespace BugsFinder.Models;
 
-/// <summary>Represents the lifecycle state of a Minesweeper game session.</summary>
+/// <summary>Represents the lifecycle state of a BugsFinder game session.</summary>
 public enum GameState
 {
     /// <summary>Game has not yet started; mines have not been placed.</summary>

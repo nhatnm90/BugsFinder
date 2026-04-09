@@ -2,10 +2,10 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 
-namespace MineSweeper.Models;
+namespace BugsFinder.Models;
 
 /// <summary>
-/// Represents the Minesweeper game board. Encapsulates all game logic:
+/// Represents the BugsFinder game board. Encapsulates all game logic:
 /// mine generation with first-click safety, BFS flood-fill reveal, flagging,
 /// and win detection.
 /// </summary>

@@ -8,9 +8,9 @@ using System.Windows.Media.Animation;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 using System.Windows.Threading;
-using MineSweeper.ViewModels;
+using BugsFinder.ViewModels;
 
-namespace MineSweeper.Views;
+namespace BugsFinder.Views;
 
 /// <summary>
 /// Code-behind for <c>MainWindow.xaml</c>.
@@ -65,6 +65,9 @@ public partial class MainWindow : Window
 
         // Always start in borderless fullscreen
         GoFullScreen();
+
+        // Intro splash — runs on top of everything; reveals tutorial when complete
+        StartSplashAnimation();
     }
 
     // ── Star animation ────────────────────────────────────────────────────────
@@ -269,6 +272,74 @@ public partial class MainWindow : Window
         Canvas.SetTop(r, top);
         r.Width  = Math.Max(0, width);
         r.Height = Math.Max(0, height);
+    }
+
+    // ── Splash intro animation ────────────────────────────────────────────────
+
+    /// <summary>
+    /// Starts the intro sequence: logo fades in, holds briefly, then both halves
+    /// fly off-screen (top up, bottom down) to reveal the game + tutorial.
+    /// </summary>
+    private void StartSplashAnimation()
+    {
+        var fadeIn = new DoubleAnimation(0, 1, new Duration(TimeSpan.FromMilliseconds(700)))
+        {
+            EasingFunction = new QuadraticEase { EasingMode = EasingMode.EaseOut }
+        };
+
+        fadeIn.Completed += (_, _) =>
+        {
+            // Hold the fully-visible logo for 800 ms, then split
+            var hold = new DispatcherTimer { Interval = TimeSpan.FromMilliseconds(800) };
+            hold.Tick += (_, _) => { hold.Stop(); StartSplashSplit(); };
+            hold.Start();
+        };
+
+        SplashLogoPanel.BeginAnimation(OpacityProperty, fadeIn);
+    }
+
+    /// <summary>
+    /// Flies the top half up and the bottom half down off-screen while simultaneously
+    /// sliding the app name in from below. Finishes with a full overlay fade-out.
+    /// </summary>
+    private void StartSplashSplit()
+    {
+        double flyDist  = ActualHeight / 2 + 300;
+        var    splitDur = new Duration(TimeSpan.FromMilliseconds(1500));
+        var    splitEase = new CubicEase { EasingMode = EasingMode.EaseIn };
+
+        // Logo halves fly apart
+        var topAnim = new DoubleAnimation(0, -flyDist, splitDur) { EasingFunction = splitEase };
+        var botAnim = new DoubleAnimation(0,  flyDist, splitDur) { EasingFunction = splitEase };
+
+        // App name slides up (191 → 166) and fades in over the first 700 ms of the split
+        var textSlideEase = new QuadraticEase { EasingMode = EasingMode.EaseOut };
+        var textSlideDur  = new Duration(TimeSpan.FromMilliseconds(1500));
+        var textSlide = new DoubleAnimation(291, 0, textSlideDur) { EasingFunction = textSlideEase };
+        var textFade  = new DoubleAnimation(0, 1, textSlideDur)     { EasingFunction = textSlideEase };
+
+        // After split: hold briefly, then fade the entire overlay out smoothly
+        topAnim.Completed += (_, _) =>
+        {
+            var hold = new DispatcherTimer { Interval = TimeSpan.FromMilliseconds(1500) };
+            hold.Tick += (_, _) =>
+            {
+                hold.Stop();
+                var fadeOut = new DoubleAnimation(1, 0,
+                    new Duration(TimeSpan.FromMilliseconds(450)))
+                {
+                    EasingFunction = new QuadraticEase { EasingMode = EasingMode.EaseIn }
+                };
+                fadeOut.Completed += (_, _) => SplashOverlay.Visibility = Visibility.Collapsed;
+                SplashOverlay.BeginAnimation(OpacityProperty, fadeOut);
+            };
+            hold.Start();
+        };
+
+        SplashTopTranslate.BeginAnimation(TranslateTransform.YProperty, topAnim);
+        SplashBottomTranslate.BeginAnimation(TranslateTransform.YProperty, botAnim);
+        SplashTextTranslate.BeginAnimation(TranslateTransform.YProperty, textSlide);
+        SplashAppName.BeginAnimation(OpacityProperty, textFade);
     }
 
     // ── Gift-open animation ───────────────────────────────────────────────────

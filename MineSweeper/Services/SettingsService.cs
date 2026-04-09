@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text.Json;
 using System.Text.Json.Serialization;
 
-namespace MineSweeper.Services;
+namespace BugsFinder.Services;
 
 // ── Data contracts ────────────────────────────────────────────────────────────
 
@@ -43,7 +43,7 @@ public sealed class GameRecord
 
 /// <summary>
 /// Manages all persisted settings (theme, per-mode leaderboards)
-/// in a single JSON file at <c>%LocalAppData%\MineSweeper\settings.json</c>.
+/// in a single JSON file at <c>%LocalAppData%\BugsFinder\settings.json</c>.
 /// Call <see cref="Load"/> once at startup before accessing any property.
 /// </summary>
 public static class SettingsService
@@ -89,7 +89,7 @@ public static class SettingsService
 
     private static readonly string SettingsPath = Path.Combine(
         Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData),
-        "MineSweeper", "settings.json");
+        "BugsFinder", "settings.json");
 
     private static readonly JsonSerializerOptions _opts = new()
     {

@@ -1,6 +1,6 @@
-namespace MineSweeper.Models;
+namespace BugsFinder.Models;
 
-/// <summary>Represents a single cell on the Minesweeper game board.</summary>
+/// <summary>Represents a single cell on the BugsFinder game board.</summary>
 public class Cell
 {
     /// <summary>Gets or sets the zero-based row index of this cell.</summary>

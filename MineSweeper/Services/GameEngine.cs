@@ -1,8 +1,8 @@
 using System;
 using System.Windows.Threading;
-using MineSweeper.Models;
+using BugsFinder.Models;
 
-namespace MineSweeper.Services;
+namespace BugsFinder.Services;
 
 /// <summary>Difficulty presets that map to board size and mine count.</summary>
 public enum Difficulty

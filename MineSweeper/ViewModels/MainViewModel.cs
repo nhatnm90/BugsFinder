@@ -4,11 +4,11 @@ using System.Linq;
 using System.Windows;
 using System.Windows.Input;
 using System.Windows.Threading;
-using MineSweeper.Models;
-using MineSweeper.Services;
-using QuizQuestion = MineSweeper.Models.QuizQuestion;
+using BugsFinder.Models;
+using BugsFinder.Services;
+using QuizQuestion = BugsFinder.Models.QuizQuestion;
 
-namespace MineSweeper.ViewModels;
+namespace BugsFinder.ViewModels;
 
 /// <summary>
 /// Root ViewModel for <c>MainWindow.xaml</c>. Owns the <see cref="GameEngine"/>,

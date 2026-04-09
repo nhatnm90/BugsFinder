@@ -1,7 +1,7 @@
 using System;
 using System.Windows.Input;
 
-namespace MineSweeper.ViewModels;
+namespace BugsFinder.ViewModels;
 
 /// <summary>
 /// A lightweight, framework-agnostic implementation of <see cref="ICommand"/> that

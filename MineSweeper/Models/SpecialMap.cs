@@ -1,10 +1,10 @@
 using System.Collections.Generic;
 using System.Linq;
 
-namespace MineSweeper.Models;
+namespace BugsFinder.Models;
 
 /// <summary>
-/// Abstract definition of a shaped Minesweeper map.
+/// Abstract definition of a shaped BugsFinder map.
 /// Concrete subclasses describe one country's border — grid dimensions,
 /// mine count, and the set of active (playable) cells.
 /// To add a new country: subclass <see cref="SpecialMap"/>, override the

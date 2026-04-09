@@ -1,7 +1,7 @@
 using System;
 using System.Windows.Input;
 
-namespace MineSweeper.ViewModels;
+namespace BugsFinder.ViewModels;
 
 /// <summary>Identifies which named UI region the tutorial spotlight should illuminate.</summary>
 public enum TutorialTarget
@@ -154,14 +154,6 @@ public sealed class TutorialViewModel : ViewModelBase
             "mode permanently for this session.\n\n" +
             "⚠ Unlocks reset when you close the app — stars and locks are session-only.",
             TutorialTarget.DifficultyBar),
-
-        //new(
-        //    "Special Maps 🗺️",
-        //    "Special mode lets you play on maps shaped like real countries!\n\n" +
-        //    "Việt Nam — navigate the S-shaped coastline from Hà Giang to Cà Mau\n\n" +
-        //    "Tiles outside the country border are hidden. Only cells inside the " +
-        //    "border contain bugs — same rules, unique shape. More countries coming soon!",
-        //    TutorialTarget.DifficultyBar),
 
         new(
             "You're Ready! 🚀",

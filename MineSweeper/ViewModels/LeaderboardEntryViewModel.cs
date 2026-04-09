@@ -1,4 +1,4 @@
-namespace MineSweeper.ViewModels;
+namespace BugsFinder.ViewModels;
 
 /// <summary>Represents a single row in the post-win leaderboard popup.</summary>
 public sealed class LeaderboardEntryViewModel

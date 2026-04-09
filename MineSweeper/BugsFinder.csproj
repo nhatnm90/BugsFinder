@@ -6,8 +6,8 @@
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
     <UseWPF>true</UseWPF>
-    <RootNamespace>MineSweeper</RootNamespace>
-    <AssemblyName>MineSweeper</AssemblyName>
+    <RootNamespace>BugsFinder</RootNamespace>
+    <AssemblyName>BugsFinder</AssemblyName>
     <ApplicationIcon>Assets\BugFinder.ico</ApplicationIcon>
   </PropertyGroup>
 
@@ -24,6 +24,7 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="Assets\BugFinder.ico" />
+    <Resource Include="Assets\BugFinder.png" />
   </ItemGroup>
 
   <ItemGroup>

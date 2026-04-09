@@ -2,7 +2,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Runtime.CompilerServices;
 
-namespace MineSweeper.ViewModels;
+namespace BugsFinder.ViewModels;
 
 /// <summary>
 /// Abstract base class for all ViewModel types. Provides a hand-written implementation

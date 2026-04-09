@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using System.Net;
 using System.Reflection;
 using System.Text.Json;
-using MineSweeper.Models;
+using BugsFinder.Models;
 
-namespace MineSweeper.Services;
+namespace BugsFinder.Services;
 
 /// <summary>
 /// Loads quiz questions from the embedded <c>real_data.json</c> resource and
@@ -30,7 +30,7 @@ public static class QuizService
         {
             var asm    = Assembly.GetExecutingAssembly();
             using var stream = asm.GetManifestResourceStream(
-                "MineSweeper.QuizGenerator.real_data.json");
+                "BugsFinder.QuizGenerator.real_data.json");
             if (stream is null) return;
 
             var opts = new JsonSerializerOptions { PropertyNameCaseInsensitive = true };

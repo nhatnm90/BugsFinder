@@ -1,11 +1,11 @@
 using System;
 using System.Windows.Input;
-using MineSweeper.Models;
+using BugsFinder.Models;
 
-namespace MineSweeper.ViewModels;
+namespace BugsFinder.ViewModels;
 
 /// <summary>
-/// ViewModel for a single Minesweeper cell. Wraps a <see cref="Cell"/> model and
+/// ViewModel for a single BugsFinder cell. Wraps a <see cref="Cell"/> model and
 /// exposes UI-friendly properties and commands consumed by the cell
 /// <c>Button</c> in <c>MainWindow.xaml</c>.
 /// </summary>

@@ -1,7 +1,7 @@
 using System;
 using System.Windows;
 
-namespace MineSweeper.Services;
+namespace BugsFinder.Services;
 
 /// <summary>
 /// Applies VS-Code-inspired colour themes at runtime by swapping a

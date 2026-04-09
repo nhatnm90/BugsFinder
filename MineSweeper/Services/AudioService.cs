@@ -2,7 +2,7 @@ using System;
 using System.IO;
 using System.Media;
 
-namespace MineSweeper.Services;
+namespace BugsFinder.Services;
 
 /// <summary>
 /// Synthesises short PCM sound effects at startup and exposes one-call

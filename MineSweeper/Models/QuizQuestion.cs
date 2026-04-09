@@ -1,6 +1,6 @@
 using System.Collections.Generic;
 
-namespace MineSweeper.Models;
+namespace BugsFinder.Models;
 
 /// <summary>One answer option for a quiz question.</summary>
 public sealed class QuizOption

@@ -52,7 +52,7 @@
     <SolidColorBrush x:Key="TutSkipFg"          Color="#999999"/>
     <SolidColorBrush x:Key="TutSkipHoverBg"     Color="#EEEEEE"/>
 
-    <!-- ── Number colours (1–8) — standard dark-on-light Minesweeper palette ── -->
+    <!-- ── Number colours (1–8) — standard dark-on-light BugsFinder palette ── -->
     <SolidColorBrush x:Key="Num1" Color="#0451A5"/>  <!-- dark blue        -->
     <SolidColorBrush x:Key="Num2" Color="#067A35"/>  <!-- dark green       -->
     <SolidColorBrush x:Key="Num3" Color="#CC0000"/>  <!-- red              -->
